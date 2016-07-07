@@ -1,0 +1,43 @@
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background-color: rgba(251, 251, 251, 1);
+  z-index: 10;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 60%;
+}
+/*
+.pace .pace-progress:after {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: attr(data-progress-text);
+  font-family:  angie-sans, Candara, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 5rem;
+  line-height: 1;
+  text-align: center;
+  color: rgba(233, 15, 146, 0.19999999999999996);
+}*/
+
+#loader-logo svg {
+	position: fixed;
+	top: 0;
+}
