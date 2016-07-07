@@ -111,7 +111,7 @@ section {
 }
 /* custom font */
 section h2 {
-	font-family: "MFShangYa";
+	font-family: MFShangYa;
 }
 .clearfix::before {
 	display: table; content: " ";
