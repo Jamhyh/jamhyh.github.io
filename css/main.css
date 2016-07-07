@@ -109,9 +109,9 @@ h5 + .underscore {
 section {
 	margin: 0; padding: 0; width: 100%;
 }
-/* youziku font */
+/* custom font */
 section h2 {
-	font-family: "hdjtechusong46bba88cf4bcc";
+	font-family: "MFShangYa";
 }
 .clearfix::before {
 	display: table; content: " ";
