@@ -1,16 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* font-face */
-@font-face
-{
-	font-family: MFShangYa;
-	src: url(../fonts/MFShangYa_Noncommercial-Regular_Custom.woff);
-}
-/* end font-face */
-
 html {
-	color: rgb(54, 54, 54); line-height: 1.4; font-size: 1em;
+	color: rgb(34, 34, 34); line-height: 1.4; font-size: 1em;
 }
 * {
 	box-sizing: border-box; -moz-box-sizing: border-box;
@@ -23,9 +15,6 @@ body {
 	line-height: 1.5; text-rendering: optimizeLegibility; 
 	font-family: "source-han-sans-simplified-c", "Helvetica Neue", Helvetica,Arial, "Hiragino Sans GB", "Microsoft YaHei", STHeiti, SimHei, sans-serif; font-size: 1em; font-weight: 300; 
 	margin: 0;
-}
-div {
-	margin: 0; padding: 0; border-style: none; border-width: 0;
 }
 svg {
 	margin: 0; padding: 0; vertical-align: middle; max-height: 100%;
@@ -87,9 +76,6 @@ h4 {
 h5 {
 	font-size: 1em;
 }
-section h2 {
-	font-family: MFShangYa;
-}
 .underscore {
 	margin: 1em 0; padding: 0; background-color: #FF59DF; display: inline-block; height: 2px; width: 80px; clear: right;
 }
@@ -120,11 +106,12 @@ h5 + .underscore {
 .container {
 	margin: auto; padding: 0; text-align: left; width: 70%; max-width: 70em;
 }
-header {
-	margin: 0; padding: 0; width: 100%;
-}
 section {
 	margin: 0; padding: 0; width: 100%;
+}
+/* custom font */
+section h2 {
+	font-family: MFShangYa;
 }
 .clearfix::before {
 	display: table; content: " ";
@@ -155,7 +142,74 @@ section {
 	display: none;
 }
 
-/* footer */
+/* index header */
+header {
+	margin: 0; padding: 0; width: 100%;
+}
+header#intro {
+	padding-top: 15%; padding-bottom: 20%; 
+}
+header#intro small {
+	color: #E1E1E1;
+}
+header#intro p {
+	max-width: 46em;
+}
+a#more-info {
+	background-color: #2F2F2F; color: #FFFFFF;
+	margin-top: 10%; line-height: 2.5; text-align: center;  display: inline-block; width: 8em; 
+}
+a#more-info:hover {
+	text-decoration: none; background-color: #FF59DF;
+}
+
+/* index work section */
+section#work {
+	padding: 8% 0 5% 0; color: #FFFFFF; background-color: #2D2D2D;
+}
+#work h2{
+	margin-bottom: 3%; line-height: 1.5;  
+}
+p#work-intro {
+	max-width: 51em; 
+}
+#work .separation {
+	margin: 0 0 10% 0; padding: 0; float: left; width: 100%; 
+}
+ul.work-list {
+	margin: auto; padding: 0; float: left; list-style: none; width: 100%;
+}
+ul.work-list li {
+	margin: 0 1.5% 1.5% 0; vertical-align: top; float: left; display: inline-block;  width: 10%;
+}
+ul.work-list .info-show p {
+	font-size: 0.9em;
+}
+
+/* index photo section */
+section#photo {
+	padding: 8% 0 5% 0; 
+}
+#photo h2{
+	margin-bottom: 3%; line-height: 1.5; max-width: 70em; 
+}
+#photo h5 + .underscore {
+	max-width: 30px;
+}
+p#photo-intro {
+	margin-bottom: 3%; max-width: 51em; 
+}
+#photo figure {
+}
+a#more-photo {
+	background-color: #2F2F2F; color: #FFFFFF;
+	margin-top: -1%; margin-bottom: 8%; line-height: 2.5; text-align: center;  display: inline-block; width: 7em; 
+}
+a#more-photo:hover {
+	text-decoration: none; background-color: #FF59DF;
+}
+
+/* index footer */
 footer {
 	margin: 0; padding: 0; width: 100%;
 }
@@ -184,8 +238,32 @@ p#c-right {
 	color: #878787;
 }
 
+
 @media only screen and (max-width:100em)
 {
+/* index header */
+header#intro {
+	padding-top: 20%; padding-bottom: 30%;
+}
+header#intro p {
+	max-width: 40em;
+}
+
+/* index work section */
+section#work {
+	padding: 15% 0 3% 0; 
+}
+p#work-intro {
+	max-width: 45em; 
+}
+ul.work-list li {
+	margin: 0 1.5% 1.5% 0; width: 11%; 
+}
+
+/* index photo section */
+section#photo {
+	padding: 15% 0 8% 0; 
+}
 .footer-bio {
 	max-width: 40em;
 }
@@ -243,7 +321,40 @@ h5 {
 	width: 100%;
 }
 
-/* footer */
+/* index header */
+header#intro {
+	padding: 35% 0 35% 0;
+}
+
+/* index work section */
+section#work {
+	padding: 20% 0 15% 0; 
+}
+#work h2 {
+	margin-bottom: 10%;
+}
+#work h5 {
+	position: relative; left: 0.3em;
+}
+ul.work-list li {
+	margin: 0px 1.5% 1.5% 0px; width: 32.3%;
+}
+ul.work-list li:nth-child(3n) {
+	margin-right: 0px;
+}
+
+/* index photo section */
+section#photo {
+	padding: 20% 0 15% 0; 
+}
+#photo h5 {
+	position: relative; left: 0.3em;
+}
+a#more-photo {
+	margin-top: 1%;
+}
+
+/* index footer */
 footer#main-footer {
 	text-align: center;
 }
@@ -263,9 +374,12 @@ p#c-right {
 	vertical-align: top;
 }
 }
-
 @media only screen and (max-width:30em)
 {
+#nav-bottom {
+}
+#bottom-bar {
+}
 #bottom-bar button {
 	line-height: 2.3;
 }
@@ -277,6 +391,12 @@ h2 {
 }
 .container {
 	width: 90%;
+}
+header#intro {
+	padding: 20% 0 50% 0;
+}
+ul.work-list li {
+	margin: 0 0 5% 0; width: 100%; 
 }
 }
 

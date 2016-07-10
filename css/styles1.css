@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* index header */
+header#intro {
+	padding-top: 15%; padding-bottom: 20%; 
+}
+header#intro small {
+	color: #E1E1E1;
+}
+header#intro p {
+	max-width: 46em;
+}
+a#more-info {
+	background-color: #2F2F2F; color: #FFFFFF;
+	margin-top: 10%; line-height: 2.5; text-align: center;  display: inline-block; width: 8em; 
+}
+a#more-info:hover {
+	text-decoration: none; background-color: #FF59DF;
+}
+
+/* index work section */
+section#work {
+	padding: 8% 0 5% 0; color: #FFFFFF; background-color: #2D2D2D;
+}
+#work h2{
+	margin-bottom: 3%; line-height: 1.5;  
+}
+p#work-intro {
+	max-width: 51em; 
+}
+#work .separation {
+	margin: 0 0 10% 0; padding: 0; float: left; width: 100%; 
+}
+ul.work-list {
+	margin: auto; padding: 0; float: left; list-style: none; width: 100%;
+}
+ul.work-list li {
+	margin: 0 1.5% 1.5% 0; vertical-align: top; float: left; display: inline-block;  width: 10%;
+}
+ul.work-list .info-show p {
+	font-size: 0.9em;
+}
+
+/* index photo section */
+section#photo {
+	padding: 8% 0 5% 0; 
+}
+#photo h2{
+	margin-bottom: 3%; line-height: 1.5; max-width: 70em; 
+}
+#photo h5 + .underscore {
+	max-width: 30px;
+}
+p#photo-intro {
+	margin-bottom: 3%; max-width: 51em; 
+}
+#photo figure {
+}
+a#more-photo {
+	background-color: #2F2F2F; color: #FFFFFF;
+	margin-top: -1%; margin-bottom: 8%; line-height: 2.5; text-align: center;  display: inline-block; width: 7em; 
+}
+a#more-photo:hover {
+	text-decoration: none; background-color: #FF59DF;
+}
+
+@media only screen and (max-width:100em)
+{
+/* index header */
+header#intro {
+	padding-top: 20%; padding-bottom: 30%;
+}
+header#intro p {
+	max-width: 40em;
+}
+
+/* index work section */
+section#work {
+	padding: 15% 0 3% 0; 
+}
+p#work-intro {
+	max-width: 45em; 
+}
+ul.work-list li {
+	margin: 0 1.5% 1.5% 0; width: 11%; 
+}
+
+/* index photo section */
+section#photo {
+	padding: 15% 0 8% 0; 
+}
+}
+
+@media only screen and (max-width:60em)
+{
+/* index header */
+header#intro {
+	padding: 35% 0 35% 0;
+}
+
+/* index work section */
+section#work {
+	padding: 20% 0 15% 0; 
+}
+#work h2 {
+	margin-bottom: 10%;
+}
+#work h5 {
+	position: relative; left: 0.3em;
+}
+ul.work-list li {
+	margin: 0px 1.5% 1.5% 0px; width: 32.3%;
+}
+ul.work-list li:nth-child(3n) {
+	margin-right: 0px;
+}
+
+/* index photo section */
+section#photo {
+	padding: 20% 0 15% 0; 
+}
+#photo h5 {
+	position: relative; left: 0.3em;
+}
+a#more-photo {
+	margin-top: 1%;
+}
+}
+@media only screen and (max-width:30em)
+{
+header#intro {
+	padding: 20% 0 50% 0;
+}
+ul.work-list li {
+	margin: 0 0 5% 0; width: 100%; 
+}
+}
