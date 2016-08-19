@@ -6,8 +6,12 @@
   -moz-user-select: none;
   user-select: none;
 }
-.pace-inactive {
-  display: none;
+.pace-done #loader {
+  opacity: 0;
+  z-index: -100;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .pace .pace-progress {
   background-color: rgba(251, 251, 251, 1);

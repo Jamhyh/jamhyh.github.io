@@ -13,12 +13,12 @@ $(function(){
 		$("#loader").show();
 		$("#loader-logo").show();
 		});
-*/
+
 	//Complete
 	$(document).ajaxStop(function(){
 		$("#loader").delay(3500).fadeOut(500);
 		});
-
+*/
 	//back-top animation
 	$(".back-top").click(function() {
 		$('html, body').animate( {
