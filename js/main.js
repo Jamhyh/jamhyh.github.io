@@ -16,7 +16,7 @@ $(function(){
 */
 	//Complete
 	$(document).ajaxStop(function(){
-		$("#loader").delay(2500).fadeOut(500);
+		$("#loader").delay(3500).fadeOut(500);
 		});
 
 	//back-top animation
