@@ -6,11 +6,9 @@
   -moz-user-select: none;
   user-select: none;
 }
-
 .pace-inactive {
   display: none;
 }
-
 .pace .pace-progress {
   background-color: rgba(251, 251, 251, 1);
   z-index: 10;
@@ -21,22 +19,17 @@
   bottom: 0;
   height: 60%;
 }
-/*
-.pace .pace-progress:after {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.pace .pace-activity:after {
   content: attr(data-progress-text);
-  font-family:  angie-sans, Candara, Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 5rem;
-  line-height: 1;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
   text-align: center;
-  color: rgba(233, 15, 146, 0.19999999999999996);
-}*/
-
+  bottom: 10%;
+  color: #13F9B9;
+  font-size: 1.5em;
+  font-family: calluna, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", STHeiti, SimHei, sans-serif;
+}
 #loader-logo svg {
 	position: fixed;
 	top: 0;

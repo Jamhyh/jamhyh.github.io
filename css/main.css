@@ -37,9 +37,6 @@ body {
 .clearfix::after {
 	clear: both;
 }
-div {
-	margin: 0; padding: 0; border-style: none; border-width: 0;
-}
 svg {
 	margin: 0; padding: 0; vertical-align: middle; max-height: 100%;
 }
@@ -120,6 +117,7 @@ h4 + .underscore {
 h5 + .underscore {
 	max-width: 50px;
 }
+
 .outer-wrap {
 	margin: 0; padding: 0; width: 100%; overflow: hidden;
 }
@@ -128,6 +126,9 @@ h5 + .underscore {
 }
 .container {
 	margin: auto; padding: 0; text-align: left; width: 70%; max-width: 70em;
+}
+div {
+	margin: 0; padding: 0; border-style: none; border-width: 0;
 }
 header {
 	margin: 0; padding: 0; width: 100%;
@@ -177,7 +178,7 @@ footer#main-footer p {
 	opacity: 0.95;
 }
 .footer-bio {
-	margin: 0;  padding: 0; font-size: 0.9em; max-width: 45em;
+	margin: 0; padding: 0; font-size: 0.9em; max-width: 45em;
 }
 .footer-bio a:hover {
 	color: #FF59DF; text-decoration: none;
@@ -202,19 +203,16 @@ p#c-right {
 @media only screen and (max-width:60em)
 {
 h1 {
-	text-align: center;
 }
 h2 {
-	text-align: center; font-size: 2.2em;
+	font-size: 2.2em;
 }
 h3 {
-	text-align: center;
 }
 h4 {
-	text-align: center; 
 }
 h5 {
-	text-align: center; margin-bottom: 1%;
+	margin-bottom: 1%;
 }
 .container {
 	text-align: center;
@@ -253,10 +251,8 @@ h5 {
 
 /* footer */
 footer#main-footer {
-	text-align: center;
 }
 .footer-bio {
-	margin: 0; padding: 0; width: 100%;
 }
 footer#main-footer ul {
 	margin-bottom: 2em; 
