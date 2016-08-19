@@ -17,7 +17,11 @@
   left: 0;
   top: 0;
   bottom: 0;
-  height: 60%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0%, 0);
+  -moz-transform: translate3d(0, 0%, 0);
+  transform: translate3d(0, 0%, 0);
 }
 .pace .pace-activity:after {
   content: attr(data-progress-text);

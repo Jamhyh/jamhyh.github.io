@@ -16,9 +16,9 @@ $(function(){
 */
 	//Complete
 	$(document).ajaxStop(function(){
-		$("#loader").delay(1000).fadeOut(500);
+		$("#loader").delay(2500).fadeOut(500);
 		});
-		
+
 	//back-top animation
 	$(".back-top").click(function() {
 		$('html, body').animate( {
