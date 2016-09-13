@@ -1,13 +1,15 @@
 document.getElementById("errmessage").innerHTML = "???";
+/*
 var map = new AMap.Map('map-container', {
     resizeEnable: true,
     zoom:11,
     center: [116.397428, 39.90923]
 
 });
-/*
+*/
+
 var options = {
-	enableHighAccuracy: false,
+	enableHighAccuracy: true,
 	timeout: 200000,
 	maximumAge: 30000
 };
@@ -30,4 +32,3 @@ function handleError(err) {
 	document.getElementById("errcode").innerHTML = err.code;
 	document.getElementById("errmessage").innerHTML = err.message;
 }
-*/
