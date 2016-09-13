@@ -9,8 +9,8 @@ var map = new AMap.Map('map-container', {
 */
 
 var options = {
-	enableHighAccuracy: true,
-	timeout: 200000,
+	enableHighAccuracy: false,
+	timeout: 20000,
 	maximumAge: 30000
 };
 if(navigator.geolocation) {
@@ -20,12 +20,14 @@ else {
 	document.getElementById("errmessage").innerHTML = "shit";
 }
 function displayPosition(pos) {
+	
   var map = new AMap.Map('map-container', {
       resizeEnable: true,
       zoom:11,
       center: [pos.coords.longitude, pos.coords.latitude]
   });
-	document.getElementById("locationInfo").innerHTML = "Longitude: " + pos.coords.longitude + " Latitude: " + pos.coord.latitude;
+	
+	document.getElementById("locationInfo").innerHTML = "Longitude: " + pos.coords.longitude + " Latitude: " + pos.coords.latitude;
 	document.getElementById("timestamp").innerHTML = pos.timestamp;
 }
 function handleError(err) {
