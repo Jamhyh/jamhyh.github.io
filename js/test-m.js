@@ -26,8 +26,8 @@ function displayPosition(pos) {
       center: [pos.coords.longitude, pos.coords.latitude]
   });
 	document.getElementById("locationInfo").innerHTML = "Longitude: " + pos.coords.longitude + " Latitude: " + pos.coord.latitude;
+	document.getElementById("timestamp").innerHTML = pos.timestamp;
 }
-document.getElementById("timestamp").innerHTML = pos.timestamp;
 function handleError(err) {
 	document.getElementById("errcode").innerHTML = err.code;
 	document.getElementById("errmessage").innerHTML = err.message;
