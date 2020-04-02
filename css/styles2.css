@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 section.secA {
-	padding-top: 3%; color: #FFFFFF; background-color: #2D2D2D;
+	padding-top: 110px; color: #FFFFFF; background-color: #2D2D2D;
 }
 section.secA h2 {
 	margin-bottom: 8px;
@@ -10,27 +10,85 @@ section.secA p {
 	opacity: 0.8;
 }
 section.secA .underscore {
-	max-width: 2em; margin-bottom: 8%; position: relative; left: 2px;
+	max-width: 2em; position: relative; left: 2px;
 }
 p {
 	opacity: 0.95;
 }
+/* for "work-lists" */
+section#work-lists {
+	padding-bottom: 2em;
+}
+#work-lists ul {
+	margin: 0; margin-bottom: 2em; padding: 0; list-style: none; 
+}
+#work-lists ul li {
+	margin: 0; margin-right: 2em; display: inline-block;
+}
+#work-lists h3 {
+	margin-top: 0%;
+}
+#work-lists figure {
+	margin: 5% 0 0 0; display:inline-block;
+}
+#work-lists .description-box {
+	margin: 0 0 2em 0; padding: 0;
+}
+#work-lists .description-left {
+	max-width: 35%; margin: 0 0 0 0; display:inline-block; 
+}
+.description-left p {
+	font-size: 0.7em; font-style: italic;
+}
+#work-lists .description-right {
+	max-width: 42%; margin: 1em 0 0 5%;  display:inline-block; vertical-align: top;
+}
+#work-lists a:hover {
+	text-decoration: none;
+}
 
 /* for "work-gallery" */
 section#work-secA {
-	margin: 0; padding: 10% 0 8px 0;
+	padding-bottom: 2em;
 }
-#work-secA figure {
-	max-width: 35%; display:inline-block;
+#work-secA ul {
+	margin: 0; margin-bottom: 2em; padding: 0; list-style: none; 
+}
+#work-secA ul li {
+	margin: 0; margin-right: 2em; display: inline-block;
 }
 #work-secA h3 {
-	margin-top: 3%;
+	margin-top: 0%;
+}
+#work-secA figure {
+	margin: 5% 0 0 0; display:inline-block;
+}
+#work-secA .description-box {
+	margin: 0 0 2em 0; padding: 0;
+}
+#work-secA .description-left {
+	max-width: 45%; margin: 0 0 0 0; display:inline-block; 
+}
+.description-left p {
+	font-size: 0.7em; font-style: italic;
+}
+#work-secA .description-right {
+	max-width: 42%; margin: 10% 0 0 10%;  display:inline-block; vertical-align: top;
 }
 section#work-secB {
-	padding: 5px 0 8% 0;
+	padding: 0 0 5% 0; 
+}
+#work-secB .gbox {
+	width: 100%; padding: 0; margin: 0; vertical-align: top;
 }
 #work-secB p {
-	max-width: 47em; margin-bottom: 0;
+	max-width: 47em; margin-bottom: 1em;
+}
+#work-secB figure {
+	max-width: 15%; margin: 0 5% 1em 0; display: inline-block; padding: 0; vertical-align: top;
+}
+#work-secB figure p {
+	margin: 0; 
 }
 #work-secB ul {
 	margin: 0; margin-top: 20%; padding: 0; list-style: none; 
@@ -99,6 +157,40 @@ p#de-60 {
 	display: none;
 }
 
+/* for "photo-gallery" */
+section#photo-secA {
+	padding-bottom: 2em;
+}
+#photo-secA figure {
+	max-width: 100%; margin: 5% 0 0 0;
+}
+#photo-secA h2 {
+}
+#photo-secA ul {
+	margin: 0; margin-bottom: 2em; padding: 0; list-style: none; 
+}
+#photo-secA ul li {
+	margin: 0; margin-right: 2em; display: inline-block;
+}
+section#photo-secB {
+	padding: 3em 0 2em 0;
+}
+ul#photo-gallery {
+	margin: 0; padding: 0; list-style: none; width: 100%; 
+}
+ul#photo-gallery li {
+	margin: 1% 1% 1% 0; width: 10%; height: 6em; float: left;  
+}
+ul#photo-gallery li:nth-child(9n) {
+	margin-right: 0;
+}
+ul#photo-gallery img {
+	cursor: pointer;
+}
+#photo-secB .info-show {
+	display: none;
+}
+
 /* for "about-me" */
 section#abme-secA {
 	padding-bottom: 2em;
@@ -128,53 +220,24 @@ section#contact-secB {
 #contact-secB img {
 	max-width: 30%;
 }
-
-/* for "photo-gallery" */
-section#photo-secA {
-	padding-bottom: 2em;
-}
-#photo-secA figure {
-	max-width: 70%;
-}
-#photo-secA h2 {
-}
-section#photo-secB {
-	padding: 3em 0 2em 0;
-}
-ul#photo-gallery {
-	margin: 0; padding: 0; list-style: none; width: 100%; 
-}
-ul#photo-gallery li {
-	margin: 1% 1% 1% 0; width: 10%; height: 6em; float: left; 
-}
-ul#photo-gallery li:nth-child(9n) {
-	margin-right: 0;
-}
-ul#photo-gallery img {
-	cursor: pointer;
-}
-#photo-secB .info-show {
-	display: none;
-}
 @media only screen and (max-width:100em)
 {
 	
+	/* for "work-lists" */
+#work-lists figure {
+	max-width: 100%;
+}
 /* for "work-gallery" */
 #work-secA figure {
-	max-width: 50%;
-}
-
-/* for "about-me" */
-#jam-de {
-	width: 30%; left: 55%;
+	max-width: 100%;
 }
 
 /* for "photo-gallery" */
 #photo-secA figure {
-	max-width: 80%;
+	max-width: 100%;
 }
 ul#photo-gallery {
-	width: 80%; 
+	width: 100%; 
 }
 ul#photo-gallery li {
 	margin: 1% 1% 1% 0; width: 12%; 
@@ -185,6 +248,12 @@ ul#photo-gallery li:nth-child(7n) {
 ul#photo-gallery li:nth-child(9n) {
 	margin-right: 1%;
 }
+
+/* for "about-me" */
+#jam-de {
+	width: 30%; left: 55%;
+}
+
 }
 @media only screen and (max-width:60em)
 {
@@ -195,12 +264,40 @@ section.secA .underscore {
 	position: relative; left: -1px; 
 }
 
+/* for "work-lists" */
+
+#work-lists ul li {
+	margin: 0 1em; 
+}
+#work-lists h3 {
+	margin-top: 5%;
+}
+#work-lists figure {
+	max-width: 100%;
+}
+#work-lists .description-left {
+	display:inline; 
+}
+#work-lists .description-right {
+	margin: 0; display:inline;
+}
+
 /* for "work-gallery" */
+
+#work-secA ul li {
+	margin: 0 1em; 
+}
 #work-secA h3 {
 	margin-top: 5%;
 }
 #work-secA figure {
 	max-width: 100%;
+}
+#work-secA .description-left {
+	display:inline; 
+}
+#work-secA .description-right {
+	margin: 0; display:inline;
 }
 #work-secB p {
 	margin-bottom: 1em;
@@ -209,7 +306,7 @@ section.secA .underscore {
 	text-align: center;
 }
 #work-secB ul li {
-	margin: 0 2%;
+	margin: 0 0;
 }
 p#de-60 {
 	display: block; position: relative; left: 0.5em;
@@ -220,12 +317,6 @@ p#show-de {
 #jam-de {
 	margin: 0 auto; width: 75%; display: block; position: inherit; 
 }
-
-/* for "about-me" */
-#abme-secA img {
-	max-width: 80%;
-}
-
 
 /* for "photo-gallery" */
 #photo-secA h2 {
@@ -245,11 +336,25 @@ ul#photo-gallery li:nth-child(5n) {
 ul#photo-gallery li:nth-child(7n) {
 	margin-right: 1%;
 }
+
+/* for "about-me" */
+#abme-secA img {
+	max-width: 80%;
+}
+
 }
 @media only screen and (max-width:30em)
 {
 section.secA {
 	padding-top: 10%;
+}
+
+/* for "work-lists" */
+#work-lists h3 {
+	margin-top: 8%;
+}
+#work-lists figure {
+	max-width: 100%;
 }
 
 /* for "work-gallery" */
@@ -268,19 +373,6 @@ section.secA {
 #work-secB ul li:last-child {
 	display: block;
 }
-
-/* for "about-me" */
-#abme-secA img {
-	max-width: 100%;
-}
-#jam-de {
-	width: 95%; 
-}
-
-/* for "contact" */
-section#photo-secA {
-}
-
 /* for "photo-gallery" */
 section#photo-secA {
 }
@@ -307,4 +399,18 @@ ul#photo-gallery li {
 ul#photo-gallery li:nth-child(5n) {
 	margin-right: 1%;
 }
+
+/* for "about-me" */
+#abme-secA img {
+	max-width: 100%;
+}
+#jam-de {
+	width: 95%; 
+}
+
+/* for "contact" */
+section#photo-secA {
+}
+
+
 }
