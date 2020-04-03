@@ -24,7 +24,7 @@ section#work {
 	padding: 8% 0 5% 0; color: #FFFFFF; background-color: #2D2D2D;
 }
 #work h2{
-	margin-bottom: 3%; line-height: 1.5;  
+	line-height: 1.5;  
 }
 p#work-intro {
 	max-width: 51em; 
@@ -36,7 +36,13 @@ ul.work-list {
 	margin: auto; padding: 0; float: left; list-style: none; width: 100%;
 }
 ul.work-list li {
-	margin: 0 1.5% 1.5% 0; vertical-align: top; float: left; display: inline-block;  height: 1%; max-width: 20%;
+	margin: 0 1.5% 1.5% 0; display: inline-block; width: 25%; 
+}
+ul.work-list figure {
+	overflow: hidden; 
+}
+ul.work-list img {
+	max-height: 150px; vertical-align: top; 
 }
 ul.work-list .info-show p {
 	font-size: 0.9em;
@@ -47,7 +53,7 @@ section#photo {
 	padding: 8% 0 5% 0; 
 }
 #photo h2{
-	margin-bottom: 3%; line-height: 1.5; max-width: 70em; 
+	line-height: 1.5; max-width: 70em; 
 }
 #photo h5 + .underscore {
 	max-width: 30px;
@@ -83,7 +89,10 @@ p#work-intro {
 	max-width: 45em; 
 }
 ul.work-list li {
-	margin: 0 1.5% 1.5% 0; width: 11%; 
+	margin: 0 1.5% 1.5% 0; width: 30%; 
+}
+ul.work-list img {
+	max-height: 250px; vertical-align: top; 
 }
 
 /* index photo section */
@@ -110,7 +119,7 @@ section#work {
 	position: relative; left: 0.3em;
 }
 ul.work-list li {
-	margin: 0px 1.5% 1.5% 0px; width: 32.3%;
+	margin: 0px 0 1.5% 0px; width: 100%;
 }
 ul.work-list li:nth-child(3n) {
 	margin-right: 0px;
@@ -133,6 +142,6 @@ header#intro {
 	padding: 20% 0 50% 0;
 }
 ul.work-list li {
-	margin: 0 0 5% 0; width: 100%; 
+	margin: 0 0 5% 0; max-width: 100%; 
 }
 }
