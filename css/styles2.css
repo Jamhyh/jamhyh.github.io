@@ -267,7 +267,7 @@ section.secA .underscore {
 /* for "work-lists" */
 
 #work-lists ul li {
-	margin: 0 1em; 
+	margin: 0 1em 1em 1em; 
 }
 #work-lists h3 {
 	margin-top: 5%;
