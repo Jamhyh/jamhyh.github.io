@@ -68,11 +68,11 @@ $(function(){
 			$("#display-box p").html($("#photo-no-16 .info-show").html());
 		});
 		$("#photo-no-17 img").click(function() {
-			$("#display-box img").attr("src","image/DSC8459.jpg");
+			$("#display-box img").attr("src","image/DSC8484.jpg");
 			$("#display-box p").html($("#photo-no-17 .info-show").html());
 		});
 		$("#photo-no-18 img").click(function() {
-			$("#display-box img").attr("src","image/DSC8484.jpg");
+			$("#display-box img").attr("src","image/DSC1822.jpg");
 			$("#display-box p").html($("#photo-no-18 .info-show").html());
 		});
 });
