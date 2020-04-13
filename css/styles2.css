@@ -43,7 +43,7 @@ section#work-lists {
 #work-lists .description-right {
 	max-width: 42%; margin: 1em 0 0 5%;  display:inline-block; vertical-align: top;
 }
-#work-lists a:hover {
+#work-lists .description-box a:hover {
 	text-decoration: none;
 }
 
@@ -95,54 +95,6 @@ section#work-secB {
 }
 #work-secB ul li {
 	margin: 0 1%; display: inline-block;
-}
-#work-secB .list-button {
-	color: #2D2D2D;
-	position: relative;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#work-secB .list-button:hover {
-	color: #FF59DF;
-}
-#work-secB .current-opt {
-	color: #FF59DF;
-}
-.list-button .opt-button {
-	width: 23px; height: 23px;
-	display: inline-block;
-	background-color: currentColor;
-    border: 0 solid currentColor;
-	transform: rotate(45deg) translate(2px, 2px);
-	-webkit-transform: rotate(45deg) translate(2px, 2px);
-    -moz-transform: rotate(45deg) translate(2px, 2px);
-}
-.list-button .next-button {
-	display: inline-block;
-	border: none;
-    border-style: solid;
-    border-width: 15px;
-    border-top-width: 0;
-	border-right-color: transparent;
-    border-left-color: transparent;
-	background: transparent;
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-}
-.list-button .prev-button {
-	display: inline-block;
-	border: none;
-    border-style: solid;
-    border-width: 15px;
-    border-top-width: 0;
-	border-right-color: transparent;
-    border-left-color: transparent;
-	background: transparent;
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
 }
 #show-de {
 	text-decoration: underline; cursor: default;
@@ -276,16 +228,16 @@ section.secA .underscore {
 	max-width: 100%;
 }
 #work-lists .description-left {
-	display:inline; 
+	display: inline; 
 }
 #work-lists .description-right {
-	margin: 0; display:inline;
+	margin: 0; display: inline;
 }
 
 /* for "work-gallery" */
 
 #work-secA ul li {
-	margin: 0 1em; 
+	margin: 0 1em 1em 1em; 
 }
 #work-secA h3 {
 	margin-top: 5%;
@@ -294,10 +246,10 @@ section.secA .underscore {
 	max-width: 100%;
 }
 #work-secA .description-left {
-	display:inline; 
+	display: inline; 
 }
 #work-secA .description-right {
-	margin: 0; display:inline;
+	margin: 0; display: inline;
 }
 #work-secB p {
 	margin-bottom: 1em;
@@ -306,7 +258,10 @@ section.secA .underscore {
 	text-align: center;
 }
 #work-secB ul li {
-	margin: 0 0;
+	margin: 0 0; 
+}
+#work-secB figure {
+	max-width: 85%; display: block; margin: 0 20% 1em 20%;
 }
 p#de-60 {
 	display: block; position: relative; left: 0.5em;
